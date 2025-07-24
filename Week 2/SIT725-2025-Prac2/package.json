@@ -1,0 +1,15 @@
+{
+  "name": "sit725-2025-prac2",
+  "version": "1.0.0",
+  "description": "This is week 2 Practical Applied Software Engineering",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "S224734529 Senandeera S.A.P.R.",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

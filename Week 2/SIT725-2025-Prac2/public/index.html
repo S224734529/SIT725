@@ -1,0 +1,53 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Express Static Page</title>
+</head>
+<body>
+<h1>Welcome to the Random Quote API</h1>
+<p>Use the endpoints to get inspirational quotes.</p>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator API Demo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Simple Calculator</h1>
+
+    <div class="input-group">
+      <input type="number" id="num1" placeholder="First number">
+      <input type="number" id="num2" placeholder="Second number">
+    </div>
+
+    <div class="buttons">
+      <button onclick="calculate('add')">Add</button>
+      <button onclick="calculate('subtract')">Subtract</button>
+      <button onclick="calculate('multiply')">Multiply</button>
+      <button onclick="calculate('divide')">Divide</button>
+    </div>
+
+    <div id="result" class="result-box">Result: </div>
+  </div>
+
+  <script>
+    async function calculate(operation) {
+      const a = document.getElementById('num1').value;
+      const b = document.getElementById('num2').value;
+      if (a === '' || b === '') {
+        alert("Please enter both numbers.");
+        return;
+      }
+      const res = await fetch(`/${operation}?a=${a}&b=${b}`);
+      const data = await res.json();
+      document.getElementById('result').innerText = 'Result: ' + (data.result ?? data.error);
+    }
+  </script>
+</body>
+</html>
