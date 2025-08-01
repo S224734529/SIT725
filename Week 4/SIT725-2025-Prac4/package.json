@@ -1,0 +1,16 @@
+{
+  "name": "sit725-2025-prac4",
+  "version": "1.0.0",
+  "description": "Week 4 Practical 4",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "S224734529",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.17.0"
+  }
+}
