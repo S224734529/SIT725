@@ -1,0 +1,21 @@
+{
+  "name": "sit725-20250-prac5",
+  "version": "1.0.0",
+  "description": "Week 5 Practical",
+  "license": "MIT",
+  "author": "S224734529",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha --reporter spec",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "chai": "^6.0.1",
+    "express": "^5.1.0",
+    "mocha": "^11.7.1",
+    "mongoos": "^0.0.1-security",
+    "mongoose": "^8.17.0",
+    "request": "^2.88.2"
+  }
+}
